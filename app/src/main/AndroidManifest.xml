@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dhrumilshah.inventoryappstage1">
+    package="com.shoker.myinventory">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".CatalogActivity"
+            android:name="com.shoker.myinventory.CatalogActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,13 +18,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EditorActivity"
-            android:label="@string/edit_books"
-            android:parentActivityName=".CatalogActivity">
+            android:name="com.shoker.myinventory.EditorActivity"
+            android:parentActivityName="com.shoker.myinventory.CatalogActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CatalogActivity" />
+                android:value="com.shoker.myinventory.CatalogActivity" />
         </activity>
     </application>
 </manifest>
